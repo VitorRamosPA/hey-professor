@@ -12,7 +12,7 @@ fi;
 
 
 #Rodar os testes
-php artisan test --parallel
+php artisan test --parallel | php
 if [ $? -ne 0 ]; then
     echo "Opa! Deu ruin aqui com algum teste. Arrume antes te continuar";
     exit 1;
