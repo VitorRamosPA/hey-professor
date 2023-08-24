@@ -29,6 +29,6 @@ it('should have at least 10 characters', function () {
         'question' => str_repeat('*', 8) . '?',
     ]);
 
-    $request->assertSessionHasErrors(['question' => __('validation.min.string', ['min' => 10, 'atribute' => 'question'])]);
+    $request->assertSessionHasErrors(['question' => __('validation.min.string', ['min' => 10, 'attribute' => 'question'])]);
     assertDatabaseCount('questions', 0);
 });
